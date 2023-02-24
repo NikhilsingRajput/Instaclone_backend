@@ -3,7 +3,8 @@ const app = express()
 const bodyParser = require("body-parser");
 const userdata = require('./models/data');
 const datacontroller = require("./controllers")
-
+const cors = require("cors");
+app.use(cors())
 // Middlewares
 app.use(express.urlencoded());
 
